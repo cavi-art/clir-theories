@@ -18,6 +18,13 @@
 ;;; You should have received a copy of the GNU Affero General Public License
 ;;; along with CAVIART-VCGEN.  If not, see <http://www.gnu.org/licenses/>.
 
+(defpackage :ir.vc.theories
+  (:use :cl)
+  (:export #:*enabled-theory-databases*)
+  (:export #:enable-default-theory-db #:enable-theory-db #:disable-theory-db
+           #:find-import-in-theory-db
+           #:get-theory-directory))
+
 (in-package :ir.vc.theories)
 
 (defparameter *default-theory-databases* (list (string 'defaultdb)))
