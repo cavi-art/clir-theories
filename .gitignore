@@ -1,0 +1,4 @@
+*.sse2f
+*.fasl
+*.FASL
+*~
